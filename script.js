@@ -1,3 +1,8 @@
+// Page Load
+window.onload = (event) => {
+    console.log('the page is now loaded.');
+  }
+
 // Mouse Click
 var content = document.getElementById("content");
 var button = document.getElementById("show-more");
@@ -12,7 +17,7 @@ button.onclick = function() {
     }
 };
 
-// Mouse Over
+// Mouse Over and Mouse Out
 function colorChange(obj) {
     if (obj.style.color == 'red') {
         obj.style.color = 'black';
@@ -20,3 +25,10 @@ function colorChange(obj) {
         obj.style.color = 'red';
     }
 }
+
+// dblclick
+const card = document.querySelector('aside');
+
+card.addEventListener('dblclick', function (e) {
+  card.classList.toggle('large');
+});
