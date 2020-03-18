@@ -11,3 +11,12 @@ button.onclick = function() {
         button.innerHTML = "Read Less";
     }
 };
+
+// Mouse Over
+function colorChange(obj) {
+    if (obj.style.color == 'red') {
+        obj.style.color = 'black';
+    } else {
+        obj.style.color = 'red';
+    }
+}
